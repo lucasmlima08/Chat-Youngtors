@@ -2,7 +2,7 @@
 
 * Um bate-papo para grupo de programação do Facebook.
 * Android 4.2.2
-* O código estará disponível quando for concluído.
+* O código estará disponível assim que for concluído.
 
 > Layout da tela de login:
 
