@@ -1,6 +1,7 @@
 # Chat Youngtors (App Android)
 
 * Um bate-papo para grupo de programação do Facebook.
+* Android 4.2.2
 * O código estará disponível quando for concluído.
 
 > Layout da tela de login:
