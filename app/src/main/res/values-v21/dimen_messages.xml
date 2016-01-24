@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- block messages -->
+    <dimen name="width_message">400dp</dimen>
+    <dimen name="size_img">80dp</dimen>
+    <dimen name="text_name">20dp</dimen>
+    <dimen name="text_message">20dp</dimen>
+    <dimen name="text_time">15dp</dimen>
+
+    <!-- menu iterations -->
+    <dimen name="text_send">20dp</dimen>
+
+    <!-- all -->
+    <dimen name="margins">5dp</dimen>
+
+</resources>

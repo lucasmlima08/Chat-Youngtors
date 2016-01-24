@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Options">
+        <menu>
+            <item android:id="@+id/item_send_message" android:icon="@android:drawable/sym_action_chat"
+                android:title="Send Message" />
+            <item android:id="@+id/item_start_videoconferencing" android:icon="@android:drawable/presence_video_online"
+                android:title="Start videoconferencing" />
+            <item android:id="@+id/item_phone_call" android:icon="@android:drawable/stat_sys_phone_call"
+                android:title="Phone Call" />
+            <item android:id="@+id/item_remove_friend" android:icon="@android:drawable/ic_delete"
+                android:title="Remove Friend" />
+        </menu>
+    </item>
+
+</menu>

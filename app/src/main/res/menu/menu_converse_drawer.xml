@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Options">
+        <menu>
+            <item android:id="@+id/item_start_videoconferencing" android:icon="@android:drawable/presence_video_online"
+                android:title="Start Videoconferencing" />
+            <item android:id="@+id/item_mute_notifications" android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="Mute Notifications" />
+        </menu>
+    </item>
+
+</menu>

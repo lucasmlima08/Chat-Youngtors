@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    android:layout_height="match_parent"
+    android:id="@+id/messageSend">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="left" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageProfileFriend"
+                android:src="@drawable/image_profile"
+                android:layout_weight="2"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageProfileFriend"
+                android:background="@drawable/layout_received_message"
+                android:layout_alignParentEnd="false" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/messageConverse"
+                    android:text="Here is the message of friend."
+                    android:textSize="25dp"
+                    android:background="#00ffffff"
+                    android:layout_weight="1"
+                    android:layout_alignParentStart="false"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00h00"
+                    android:id="@+id/timeConverse"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="20dp"
+                    android:layout_gravity="right"
+                    android:layout_below="@+id/messageConverse"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

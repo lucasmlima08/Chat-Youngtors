@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@drawable/background_converse"
+    android:layout_height="match_parent" android:fitsSystemWindows="false" tools:context=".Converse">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbarConverse"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Converse">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/converse" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:background="#e1e1e1">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" >
+
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/emoticons"
+                        android:src="@drawable/ic_emoticon"
+                        android:scaleType="fitCenter"
+                        android:background="#00ffffff"
+                        android:layout_margin="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/input_border_converse">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/image"
+                            android:layout_weight="4"
+                            android:src="@drawable/ic_action_camera"
+                            android:scaleType="center" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:inputType="textMultiLine"
+                            android:id="@+id/message"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:textColor="#ff000000"
+                            android:background="#ffffff" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/archive"
+                            android:layout_weight="4"
+                            android:src="@drawable/ic_action_upload"
+                            android:scaleType="center" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5">
+
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/imageButton"
+                        android:src="@drawable/ic_action_send_now"
+                        android:scaleType="fitCenter"
+                        android:background="#00ffffff"
+                        android:layout_margin="5dp"
+                        android:clickable="false" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
