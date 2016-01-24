@@ -2,7 +2,10 @@
 
 * Um bate-papo para Android.
 * Android 4.2.2
-* O projeto está em desenvolvimento.
+
+# Importante
+
+* O projeto está em desenvolvimento e contém apenas o design da interface.
 
 # Imagens do Desenvolvimento
 
