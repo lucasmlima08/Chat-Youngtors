@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.myllenno.youngtors.R;
 
-public class Videoconferencing extends Activity  {
+public class VideoTransmission extends Activity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

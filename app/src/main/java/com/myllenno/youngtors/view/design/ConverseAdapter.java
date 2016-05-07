@@ -6,16 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.myllenno.youngtors.R;
-import com.myllenno.youngtors.model.capsule.Converse;
+import com.myllenno.youngtors.model.capsule.Message;
 
 import java.util.ArrayList;
 
 public class ConverseAdapter extends RecyclerView.Adapter<ConverseHolder> {
 
-    private ArrayList<Converse> converse;
+    private ArrayList<Message> converse;
     private String status;
 
-    public ConverseAdapter(ArrayList<Converse> converse, int id, String status){
+    public ConverseAdapter(ArrayList<Message> converse, int id, String status){
         this.converse = converse;
         this.status = status;
     }

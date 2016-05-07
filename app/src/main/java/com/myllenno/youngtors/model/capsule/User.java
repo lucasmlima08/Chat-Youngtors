@@ -2,6 +2,7 @@ package com.myllenno.youngtors.model.capsule;
 
 public class User {
 
+    private int id;
     private String name;
     private String email;
     private String password;
@@ -14,7 +15,8 @@ public class User {
     private String phone;
     private String website;
 
-    public User(String name,
+    public User(int id,
+                String name,
                 String email,
                 String password,
                 String description,
@@ -26,6 +28,7 @@ public class User {
                 String phone,
                 String website)
     {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
@@ -37,6 +40,10 @@ public class User {
         this.company = company;
         this.phone = phone;
         this.website = website;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {

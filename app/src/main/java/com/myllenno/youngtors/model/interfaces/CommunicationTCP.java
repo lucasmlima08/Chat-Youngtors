@@ -1,5 +1,7 @@
 package com.myllenno.youngtors.model.interfaces;
 
+import com.myllenno.youngtors.model.capsule.Message;
+
 public interface CommunicationTCP {
 
     /** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -15,14 +17,14 @@ public interface CommunicationTCP {
      *  Aguarda a resposta de aceitação do servidor.
      *  Em caso de aceitação inicia as threads de requisições.
      * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    void authentication(int id);
+    void authentication();
 
     /** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
      *  Realiza a leitura de novas requisições do usuário.
      *  Inclui as requisições lidas na lista de requisições.
      *  Faz a comunicação com o banco de dados.
      * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    Thread processMessages();
+    void processMessages(Message message);
 
     /** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
      *  Thread de recebimento de mensagens do servidor para o cliente:
@@ -40,5 +42,5 @@ public interface CommunicationTCP {
      *  Método de fechamento da comunicação do cliente:
      *  Interrompe as threads e o socket de comunicação com o servidor.
      * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    void closeConnection();
+    void stopConnection();
 }
